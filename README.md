@@ -2,9 +2,9 @@
 
 ## 📁 Files
 
-- sales_decline_analysis.sql – SQL queries  
-- sales_decline_dashboard.pbix – Power BI dashboard  
-- dashboard.png – dashboard preview  
+- `sales_decline_analysis.sql` – SQL queries  
+- `sales_decline_dashboard.pbix` – Power BI dashboard  
+- `dashboard.png` – dashboard preview  
 
 **EN:**  
 End-to-end analysis of a revenue decline in an e-commerce business using SQL and Power BI.  
