@@ -1,208 +1,95 @@
-# 📊 Sales Decline Analysis – E-commerce
+📊 Sales Decline Analysis – E-commerce
 
-## 📌 Project Overview
-This project analyzes a decline in sales in an e-commerce dataset.  
-The goal was to identify the key driver behind the drop in revenue using SQL and Power BI.
+EN:
+End-to-end analysis of a revenue decline in an e-commerce business using SQL and Power BI.
+The project identifies the root cause of declining sales and provides actionable business recommendations.
 
----
+PL:
+Kompleksowa analiza spadku przychodów w e-commerce z wykorzystaniem SQL i Power BI.
+Projekt identyfikuje główną przyczynę spadku sprzedaży oraz dostarcza rekomendacje biznesowe.
 
-## 🎯 Business Problem
-A decrease in total revenue was observed over time.  
-The objective was to determine whether the decline was caused by:
+🎯 Business Problem
 
-- fewer customers  
-- lower average order value (AOV)  
-- changes in customer behavior  
+EN:
+Revenue declined over time. The goal was to identify the root cause by analyzing:
 
----
+customer volume
+average order value (AOV)
+purchasing behavior
 
-## 🛠 Tools & Technologies
-- SQL Server – data extraction and transformation  
-- Power BI – data visualization and dashboard creation  
+PL:
+Zaobserwowano spadek przychodów w czasie. Celem było określenie przyczyny poprzez analizę:
 
----
+liczby klientów
+średniej wartości zamówienia (AOV)
+zachowań zakupowych
+🛠 Tools & Technologies
+SQL Server
+Power BI
+🧠 SQL Highlights
 
-## 📂 Dataset
-The analysis is based on the Olist e-commerce dataset, including:
+EN:
 
-- orders  
-- order_items  
-- customers  
-- products  
-- category translation  
+Joined multiple tables (orders, order_items, customers, products)
+Created aggregated monthly dataset for trend analysis
+Calculated key metrics: revenue, AOV, customer count
+Built a final SQL view used in Power BI
 
----
+PL:
 
-## 🔎 Analysis Steps
+Połączenie wielu tabel (orders, order_items, customers, products)
+Agregacja danych miesięcznych do analizy trendów
+Wyliczenie kluczowych metryk: przychód, AOV, liczba klientów
+Stworzenie widoku SQL wykorzystywanego w Power BI
+📈 Key Insights
 
-### 1. Data Preparation (SQL)
-- joined multiple tables (orders, order_items, customers, products)  
-- filtered only delivered orders  
-- calculated key metrics:
-  - revenue  
-  - number of orders  
-  - number of customers  
-  - average order value (AOV)  
+EN:
 
----
+Revenue decline is driven primarily by a decrease in the number of customers
+Average Order Value (AOV) remains stable over time
+No significant change in purchasing behavior
 
-### 2. Aggregation
-- monthly aggregation of:
-  - total revenue  
-  - number of orders  
-  - number of customers  
-- created a final dataset (SQL view) for reporting  
+👉 The issue is related to customer acquisition, not basket value
 
----
+PL:
 
-### 3. Visualization (Power BI)
-Built an interactive dashboard including:
+Spadek przychodów wynika głównie ze spadku liczby klientów
+Średnia wartość zamówienia (AOV) pozostaje stabilna
+Brak istotnych zmian w zachowaniach zakupowych
 
-- KPI metrics (Revenue, Orders, Customers, AOV)  
-- Sales trend over time  
-- Customer analysis  
-- Top 10 product categories by revenue  
-- Filters (time, category)  
+👉 Problem dotyczy pozyskiwania klientów, a nie wartości koszyka
 
----
+## 📊 Dashboard Preview
 
-## 📈 Key Insights
+dashboard.png
 
-- Sales decline is primarily driven by a decrease in the number of customers  
-- Average Order Value (AOV) remains stable over time  
-- Customer behavior has not significantly changed  
-- The issue is related to customer acquisition, not basket value  
+📌 Business Impact
 
----
+EN:
+The analysis indicates that the key issue lies in customer acquisition rather than pricing strategy.
+This suggests a need to focus on marketing performance and retention strategies.
 
-## 📊 Dashboard
-![Dashboard Preview](dashboard.png)
+PL:
+Analiza wskazuje, że problem dotyczy pozyskiwania klientów, a nie strategii cenowej.
+Sugeruje to konieczność skupienia się na marketingu i działaniach retencyjnych.
 
----
+🚀 Recommendations
 
-## 🚀 Conclusions
+EN:
 
-The decline in revenue is not caused by lower spending per customer,  
-but by a reduction in the number of active customers.
+Improve customer acquisition strategies
+Analyze marketing performance
+Strengthen retention campaigns
 
-👉 Recommended actions:
-- improve customer acquisition strategies  
-- analyze marketing performance  
-- focus on retention campaigns  
+PL:
 
----
+Poprawa strategii pozyskiwania klientów
+Analiza skuteczności działań marketingowych
+Wzmocnienie działań retencyjnych
+💡 About the Project
 
-## 💡 Author Note
-This project was created as part of a data analytics portfolio to demonstrate:
+EN:
+This project was created as part of a data analytics portfolio to demonstrate SQL skills, business thinking, and dashboard design in Power BI.
 
-- SQL data transformation  
-- business thinking and analytical approach  
-- dashboard design in Power BI  
-
----
-
----
-
-# 🇵🇱 Analiza spadku sprzedaży – E-commerce
-
-## 📌 Opis projektu
-Projekt polega na analizie spadku sprzedaży w danych e-commerce.  
-Celem było zidentyfikowanie głównej przyczyny spadku przychodów przy użyciu SQL oraz Power BI.
-
----
-
-## 🎯 Problem biznesowy
-Zaobserwowano spadek przychodów w czasie.  
-Celem analizy było ustalenie, czy spadek wynika z:
-
-- mniejszej liczby klientów  
-- spadku średniej wartości zamówienia (AOV)  
-- zmiany zachowań zakupowych klientów  
-
----
-
-## 🛠 Narzędzia
-- SQL Server – przygotowanie i transformacja danych  
-- Power BI – wizualizacja danych i dashboard  
-
----
-
-## 📂 Dane
-Analiza oparta jest na zbiorze danych Olist, zawierającym m.in.:
-
-- zamówienia  
-- pozycje zamówień  
-- klientów  
-- produkty  
-- tłumaczenia kategorii  
-
----
-
-## 🔎 Etapy analizy
-
-### 1. Przygotowanie danych (SQL)
-- połączenie tabel (orders, order_items, customers, products)  
-- filtrowanie zamówień o statusie „delivered”  
-- wyliczenie metryk:
-  - przychód  
-  - liczba zamówień  
-  - liczba klientów  
-  - AOV  
-
----
-
-### 2. Agregacja
-- agregacja miesięczna:
-  - przychodu  
-  - liczby zamówień  
-  - liczby klientów  
-- stworzenie widoku SQL do raportowania  
-
----
-
-### 3. Wizualizacja (Power BI)
-Dashboard zawiera:
-
-- KPI (przychód, zamówienia, klienci, AOV)  
-- trend sprzedaży w czasie  
-- analiza klientów  
-- TOP 10 kategorii produktowych  
-- filtry (czas, kategoria)  
-
----
-
-## 📈 Kluczowe wnioski
-
-- Spadek sprzedaży wynika głównie ze spadku liczby klientów  
-- Średnia wartość zamówienia (AOV) pozostaje stabilna  
-- Zachowania zakupowe klientów nie uległy istotnej zmianie  
-- Problem dotyczy pozyskiwania klientów, nie ich wydatków  
-
----
-
-## 📊 Dashboard
-![Podgląd dashboardu](dashboard.png)
-
----
-
-## 🚀 Wnioski biznesowe
-
-Spadek przychodów nie wynika ze zmniejszenia wartości koszyka,  
-lecz z mniejszej liczby aktywnych klientów.
-
-👉 Rekomendacje:
-- działania marketingowe  
-- poprawa pozyskiwania klientów  
-- działania retencyjne  
-
----
-
-## 💡 Uwagi autora
-Projekt został wykonany jako część portfolio Data Analyst, pokazujący:
-
-- pracę z SQL  
-- analizę danych  
-- myślenie biznesowe  
-- tworzenie dashboardów  
-
----
+PL:
+Projekt został wykonany jako część portfolio Data Analyst, prezentując umiejętności SQL, analizę danych oraz tworzenie dashboardów w Power BI.
